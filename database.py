@@ -8,15 +8,13 @@ from sql_utils import run_sql_file
 
 class Database:
     def __init__(self):
-        """
-            Chargez les variables d'environnement de votre fichier .env, puis complétez les lignes 15 à 19 afin de récupérer les valeurs de ces variables
-        """
+        load_dotenv()
 
-        self.host =
-        self.port =
-        self.database =
-        self.user =
-        self.password =
+        self.host = os.getenv('HOST', '127.0.0.1')
+        self.port = int(os.getenv('PORT', '3306'))
+        self.database = os.getenv('DATABASE', 'atelier_bd')
+        self.user = os.getenv('USER', 'root')
+        self.password = os.getenv('PASSWORD', '')
 
         self._open_sql_connection()
 
