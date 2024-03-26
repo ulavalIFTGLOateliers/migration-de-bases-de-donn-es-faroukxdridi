@@ -10,11 +10,11 @@ class Database:
     def __init__(self):
         load_dotenv()
 
-        self.host = os.getenv('HOST', '127.0.0.1')
-        self.port = int(os.getenv('PORT', '3306'))
-        self.database = os.getenv('DATABASE', 'atelier_bd')
-        self.user = os.getenv('USER', 'root')
-        self.password = os.getenv('PASSWORD', '')
+        self.host = os.environ.get("HOST")
+        self.port = int(os.environ.get("PORT"))
+        self.database = os.environ.get("DATABASE")
+        self.user = os.environ.get("USER")
+        self.password = os.environ.get("PASSWORD")
 
         self._open_sql_connection()
 

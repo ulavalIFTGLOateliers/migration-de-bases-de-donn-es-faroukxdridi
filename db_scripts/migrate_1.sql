@@ -27,3 +27,5 @@ UPDATE musician SET role = 'vocals', bandName = 'Crazy Duo' WHERE firstName = 'D
 UPDATE musician SET role = 'guitar', bandName = 'Mysterio' WHERE firstName = 'Jessie' AND lastName = 'Chancey';
 UPDATE musician SET role = 'percussion', bandName = 'Crazy Duo' WHERE firstName = 'Sarah' AND lastName = 'Derrick';
 UPDATE musician SET role = 'piano', bandName = 'Luna' WHERE firstName = 'Emily' AND lastName = 'Seibold';
+
+

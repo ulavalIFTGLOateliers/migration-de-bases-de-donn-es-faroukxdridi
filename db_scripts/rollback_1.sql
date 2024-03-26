@@ -1,4 +1,3 @@
-ALTER TABLE album DROP FOREIGN KEY FK_A_musicianName;
 
 ALTER TABLE musician DROP FOREIGN KEY fk_musician;
 
